@@ -37,6 +37,7 @@ def train_model():
         dict(epochs=epochs, batch_size=batch_size, learning_rate=learning_rate,
              val_percent=val_percent, save_checkpoint=save_checkpoint, img_scale=img_scale, amp=amp)
     )
+    print("Using device: ", device)
 
     logging.info(f'''Starting training:
             Epochs:          {epochs}
@@ -69,10 +70,11 @@ def train_model():
 
                 with torch.autocast(device.type if device.type != 'mps' else 'cpu', enabled=amp):
                     masks_pred = model(images)
+
                     loss = criterion(masks_pred, true_masks)
                     loss += dice_loss(
                         F.softmax(masks_pred, dim=1).float(),
-                        F.one_hot(true_masks, model.n_classes).permute(0, 3, 1, 2).float(),
+                        F.one_hot(true_masks, 3).permute(0, 3, 1, 2).float(),
                         multiclass=True
                     )
 
@@ -87,15 +89,13 @@ def train_model():
             epoch_loss += loss.item()
             experiment.log({
                 'train loss': loss.item(),
-                'step': global_step,
-                'epoch': epoch
             })
             pbar.set_postfix(**{'loss (batch)': loss.item()})
 
             # Evaluation round
             division_step = (n_train // (5 * batch_size))
-            if division_step > 0:
-                if global_step % division_step == 0:
+            if division_step > 0 or True:
+                if global_step % division_step == 0 or True:
                     histograms = {}
                     for tag, value in model.named_parameters():
                         tag = tag.replace('/', '.')
@@ -108,21 +108,11 @@ def train_model():
                     scheduler.step(val_score)
 
                     logging.info('Validation Dice score: {}'.format(val_score))
-                    try:
-                        experiment.log({
-                            'learning rate': optimizer.param_groups[0]['lr'],
-                            'validation Dice': val_score,
-                            'images': wandb.Image(images[0].cpu()),
-                            'masks': {
-                                'true': wandb.Image(true_masks[0].float().cpu()),
-                                'pred': wandb.Image(masks_pred.argmax(dim=1)[0].float().cpu()),
-                            },
-                            'step': global_step,
-                            'epoch': epoch,
-                            **histograms
-                        })
-                    except:
-                        pass
+                    experiment.log({
+                        'validation Dice': val_score,
+                        **histograms
+                    })
+
     if save_checkpoint:
         Path(dir_checkpoint).mkdir(parents=True, exist_ok=True)
         state_dict = model.state_dict()

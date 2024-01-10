@@ -1,0 +1,71 @@
+2024-01-10 13:27:41,722 INFO    StreamThr :19968 [internal.py:wandb_internal():86] W&B internal server running at pid: 19968, started at: 2024-01-10 13:27:41.722581
+2024-01-10 13:27:41,724 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: status
+2024-01-10 13:27:41,726 INFO    WriterThread:19968 [datastore.py:open_for_write():87] open: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_132741-jcvy2myu\run-jcvy2myu.wandb
+2024-01-10 13:27:41,726 DEBUG   SenderThread:19968 [sender.py:send():382] send: header
+2024-01-10 13:27:41,835 DEBUG   SenderThread:19968 [sender.py:send():382] send: run
+2024-01-10 13:27:41,837 INFO    SenderThread:19968 [sender.py:_maybe_setup_resume():763] checking resume status for None/U-Net/jcvy2myu
+2024-01-10 13:27:42,484 INFO    SenderThread:19968 [dir_watcher.py:__init__():211] watching files in: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_132741-jcvy2myu\files
+2024-01-10 13:27:42,484 INFO    SenderThread:19968 [sender.py:_start_run_threads():1136] run started: jcvy2myu with start time 1704886061.72258
+2024-01-10 13:27:42,493 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: check_version
+2024-01-10 13:27:42,493 DEBUG   SenderThread:19968 [sender.py:send_request():409] send_request: check_version
+2024-01-10 13:27:42,638 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: run_start
+2024-01-10 13:27:42,659 DEBUG   HandlerThread:19968 [system_info.py:__init__():27] System info init
+2024-01-10 13:27:42,660 DEBUG   HandlerThread:19968 [system_info.py:__init__():42] System info init done
+2024-01-10 13:27:42,660 INFO    HandlerThread:19968 [system_monitor.py:start():194] Starting system monitor
+2024-01-10 13:27:42,660 INFO    SystemMonitor:19968 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-10 13:27:42,660 INFO    HandlerThread:19968 [system_monitor.py:probe():214] Collecting system info
+2024-01-10 13:27:42,663 INFO    SystemMonitor:19968 [interfaces.py:start():190] Started cpu monitoring
+2024-01-10 13:27:42,664 INFO    SystemMonitor:19968 [interfaces.py:start():190] Started disk monitoring
+2024-01-10 13:27:42,665 INFO    SystemMonitor:19968 [interfaces.py:start():190] Started gpu monitoring
+2024-01-10 13:27:42,671 INFO    SystemMonitor:19968 [interfaces.py:start():190] Started memory monitoring
+2024-01-10 13:27:42,679 INFO    SystemMonitor:19968 [interfaces.py:start():190] Started network monitoring
+2024-01-10 13:27:42,682 DEBUG   HandlerThread:19968 [system_info.py:probe():151] Probing system
+2024-01-10 13:27:42,683 DEBUG   HandlerThread:19968 [system_info.py:_probe_git():136] Probing git
+2024-01-10 13:27:42,738 DEBUG   HandlerThread:19968 [system_info.py:_probe_git():144] Probing git done
+2024-01-10 13:27:42,738 DEBUG   HandlerThread:19968 [system_info.py:probe():199] Probing system done
+2024-01-10 13:27:42,738 DEBUG   HandlerThread:19968 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.9.13', 'heartbeatAt': '2024-01-10T11:27:42.682971', 'startedAt': '2024-01-10T11:27:41.716580', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:\\Users\\mdini\\Desktop\\CVDL\\LFW-Segmentation\\LFW-Segmentation-With-UNet\\train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/Dinica-Mircea/LFW-Segmentation-With-UNet.git', 'commit': '36ebb9f225c3150df4b0058dc53e7df309ff29ec'}, 'email': 'dinikmircea@gmail.com', 'root': 'C:/Users/mdini/Desktop/CVDL/LFW-Segmentation/LFW-Segmentation-With-UNet', 'host': 'Mircea', 'username': 'Mircea', 'executable': 'C:\\Users\\mdini\\AppData\\Local\\Programs\\Python\\Python39\\python.exe', 'cpu_count': 12, 'cpu_count_logical': 24, 'cpu_freq': {'current': 3701.0, 'min': 0.0, 'max': 3701.0}, 'cpu_freq_per_core': [{'current': 3701.0, 'min': 0.0, 'max': 3701.0}], 'disk': {'/': {'total': 930.7392539978027, 'used': 159.5098419189453}}, 'gpu': 'NVIDIA GeForce RTX 4070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4070', 'memory_total': 12878610432}], 'memory': {'total': 31.920791625976562}}
+2024-01-10 13:27:42,738 INFO    HandlerThread:19968 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-10 13:27:42,738 INFO    HandlerThread:19968 [system_monitor.py:probe():227] Publishing system info
+2024-01-10 13:27:42,738 INFO    HandlerThread:19968 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-10 13:27:42,743 DEBUG   SenderThread:19968 [sender.py:send():382] send: files
+2024-01-10 13:27:42,744 INFO    SenderThread:19968 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-01-10 13:27:42,749 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: python_packages
+2024-01-10 13:27:42,749 DEBUG   SenderThread:19968 [sender.py:send_request():409] send_request: python_packages
+2024-01-10 13:27:42,749 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-10 13:27:42,750 DEBUG   SenderThread:19968 [sender.py:send_request():409] send_request: stop_status
+2024-01-10 13:27:42,750 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-10 13:27:42,993 DEBUG   SenderThread:19968 [sender.py:send():382] send: telemetry
+2024-01-10 13:27:42,993 DEBUG   SenderThread:19968 [sender.py:send():382] send: config
+2024-01-10 13:27:43,432 INFO    wandb-upload_0:19968 [upload_job.py:push():131] Uploaded file C:\Users\mdini\AppData\Local\Temp\tmplvprz8wdwandb\2oh0ufwi-wandb-metadata.json
+2024-01-10 13:27:43,486 INFO    Thread-16 :19968 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_132741-jcvy2myu\files\wandb-metadata.json
+2024-01-10 13:27:43,486 INFO    Thread-16 :19968 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_132741-jcvy2myu\files\requirements.txt
+2024-01-10 13:27:43,487 INFO    Thread-16 :19968 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_132741-jcvy2myu\files\output.log
+2024-01-10 13:27:45,504 INFO    Thread-16 :19968 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_132741-jcvy2myu\files\output.log
+2024-01-10 13:27:47,087 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 13:27:52,113 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 13:27:57,133 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 13:27:57,755 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-10 13:27:57,755 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-10 13:27:57,755 DEBUG   SenderThread:19968 [sender.py:send_request():409] send_request: stop_status
+2024-01-10 13:28:02,993 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 13:28:08,022 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 13:28:12,754 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-10 13:28:12,754 DEBUG   SenderThread:19968 [sender.py:send_request():409] send_request: stop_status
+2024-01-10 13:28:12,769 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-10 13:28:14,019 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 13:28:14,688 INFO    Thread-16 :19968 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_132741-jcvy2myu\files\config.yaml
+2024-01-10 13:28:19,277 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 13:28:24,285 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 13:28:27,756 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-10 13:28:27,756 DEBUG   SenderThread:19968 [sender.py:send_request():409] send_request: stop_status
+2024-01-10 13:28:27,772 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-10 13:28:30,036 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 13:28:35,107 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 13:28:40,163 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 13:28:42,684 DEBUG   SystemMonitor:19968 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-10 13:28:42,684 DEBUG   SenderThread:19968 [sender.py:send():382] send: stats
+2024-01-10 13:28:42,778 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-10 13:28:42,778 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-10 13:28:42,778 DEBUG   SenderThread:19968 [sender.py:send_request():409] send_request: stop_status
+2024-01-10 13:28:46,027 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 13:28:51,061 DEBUG   HandlerThread:19968 [handler.py:handle_request():146] handle_request: status_report

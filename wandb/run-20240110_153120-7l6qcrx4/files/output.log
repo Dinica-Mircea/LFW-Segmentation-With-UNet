@@ -1,0 +1,31 @@
+
+Using device:  cuda
+Epoch 1/50:   0%|          | 0/2049 [00:00<?, ?img/s]
+torch.Size([200, 3, 200, 200])
+torch.Size([200, 64, 196, 196])
+torch.Size([200, 64, 98, 98])
+torch.Size([200, 128, 94, 94])
+torch.Size([200, 128, 47, 47])
+torch.Size([200, 256, 43, 43])
+torch.Size([200, 256, 21, 21])
+torch.Size([200, 512, 17, 17])
+Epoch 1/50:   0%|          | 0/2049 [02:24<?, ?img/s]
+Traceback (most recent call last):
+  File "C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\train.py", line 137, in <module>
+    train_model()
+  File "C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\train.py", line 73, in train_model
+    loss = criterion(masks_pred, true_masks)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\nn\modules\loss.py", line 1179, in forward
+    return F.cross_entropy(input, target, weight=self.weight,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\nn\functional.py", line 3053, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: only batches of spatial targets supported (3D tensors) but got targets of size: : [200, 3, 200, 200]

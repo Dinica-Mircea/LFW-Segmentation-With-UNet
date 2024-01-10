@@ -1,0 +1,228 @@
+2024-01-10 16:38:19,279 INFO    StreamThr :1904 [internal.py:wandb_internal():86] W&B internal server running at pid: 1904, started at: 2024-01-10 16:38:19.279490
+2024-01-10 16:38:19,280 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status
+2024-01-10 16:38:19,283 INFO    WriterThread:1904 [datastore.py:open_for_write():85] open: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\run-x0dqju8y.wandb
+2024-01-10 16:38:19,283 DEBUG   SenderThread:1904 [sender.py:send():380] send: header
+2024-01-10 16:38:19,313 DEBUG   SenderThread:1904 [sender.py:send():380] send: run
+2024-01-10 16:38:19,315 INFO    SenderThread:1904 [sender.py:_maybe_setup_resume():759] checking resume status for None/U-Net/x0dqju8y
+2024-01-10 16:38:20,192 INFO    SenderThread:1904 [dir_watcher.py:__init__():211] watching files in: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files
+2024-01-10 16:38:20,192 INFO    SenderThread:1904 [sender.py:_start_run_threads():1124] run started: x0dqju8y with start time 1704897499.28049
+2024-01-10 16:38:20,205 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: check_version
+2024-01-10 16:38:20,205 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: check_version
+2024-01-10 16:38:20,683 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: run_start
+2024-01-10 16:38:20,704 DEBUG   HandlerThread:1904 [system_info.py:__init__():32] System info init
+2024-01-10 16:38:20,704 DEBUG   HandlerThread:1904 [system_info.py:__init__():47] System info init done
+2024-01-10 16:38:20,705 INFO    HandlerThread:1904 [system_monitor.py:start():194] Starting system monitor
+2024-01-10 16:38:20,705 INFO    SystemMonitor:1904 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-10 16:38:20,705 INFO    HandlerThread:1904 [system_monitor.py:probe():214] Collecting system info
+2024-01-10 16:38:20,708 INFO    SystemMonitor:1904 [interfaces.py:start():190] Started cpu monitoring
+2024-01-10 16:38:20,709 INFO    SystemMonitor:1904 [interfaces.py:start():190] Started disk monitoring
+2024-01-10 16:38:20,709 INFO    SystemMonitor:1904 [interfaces.py:start():190] Started gpu monitoring
+2024-01-10 16:38:20,711 INFO    SystemMonitor:1904 [interfaces.py:start():190] Started memory monitoring
+2024-01-10 16:38:20,719 INFO    SystemMonitor:1904 [interfaces.py:start():190] Started network monitoring
+2024-01-10 16:38:20,728 DEBUG   HandlerThread:1904 [system_info.py:probe():196] Probing system
+2024-01-10 16:38:20,728 DEBUG   HandlerThread:1904 [system_info.py:_probe_git():181] Probing git
+2024-01-10 16:38:20,783 DEBUG   HandlerThread:1904 [system_info.py:_probe_git():189] Probing git done
+2024-01-10 16:38:20,783 DEBUG   HandlerThread:1904 [system_info.py:probe():244] Probing system done
+2024-01-10 16:38:20,784 DEBUG   HandlerThread:1904 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22631-SP0', 'python': '3.11.5', 'heartbeatAt': '2024-01-10T14:38:20.728577', 'startedAt': '2024-01-10T14:38:19.272248', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'C:\\Users\\mdini\\Desktop\\CVDL\\LFW-Segmentation\\LFW-Segmentation-With-UNet\\train.py', 'codePathLocal': 'train.py', 'codePath': 'train.py', 'git': {'remote': 'https://github.com/Dinica-Mircea/LFW-Segmentation-With-UNet.git', 'commit': '36ebb9f225c3150df4b0058dc53e7df309ff29ec'}, 'email': 'dinikmircea@gmail.com', 'root': 'C:/Users/mdini/Desktop/CVDL/LFW-Segmentation/LFW-Segmentation-With-UNet', 'host': 'Mircea', 'username': 'Mircea', 'executable': 'C:\\Users\\mdini\\anaconda3\\python.exe', 'cpu_count': 12, 'cpu_count_logical': 24, 'cpu_freq': {'current': 3342.0, 'min': 0.0, 'max': 3701.0}, 'cpu_freq_per_core': [{'current': 3342.0, 'min': 0.0, 'max': 3701.0}], 'disk': {'/': {'total': 930.7392539978027, 'used': 154.62300491333008}}, 'gpu': 'NVIDIA GeForce RTX 4070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4070', 'memory_total': 12878610432}], 'memory': {'total': 31.920791625976562}}
+2024-01-10 16:38:20,784 INFO    HandlerThread:1904 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-10 16:38:20,784 INFO    HandlerThread:1904 [system_monitor.py:probe():227] Publishing system info
+2024-01-10 16:38:20,784 DEBUG   HandlerThread:1904 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-01-10 16:38:20,785 DEBUG   HandlerThread:1904 [system_info.py:_save_pip():68] Saving pip packages done
+2024-01-10 16:38:20,785 DEBUG   HandlerThread:1904 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-01-10 16:38:21,198 INFO    Thread-16 :1904 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\conda-environment.yaml
+2024-01-10 16:38:21,199 INFO    Thread-16 :1904 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\requirements.txt
+2024-01-10 16:38:32,463 DEBUG   HandlerThread:1904 [system_info.py:_save_conda():87] Saving conda packages done
+2024-01-10 16:38:32,464 INFO    HandlerThread:1904 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-10 16:38:32,467 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:38:32,468 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-10 16:38:32,468 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:38:32,468 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-10 16:38:32,468 DEBUG   SenderThread:1904 [sender.py:send():380] send: files
+2024-01-10 16:38:32,468 INFO    SenderThread:1904 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2024-01-10 16:38:32,474 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-10 16:38:32,474 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: stop_status
+2024-01-10 16:38:32,475 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-10 16:38:32,650 DEBUG   SenderThread:1904 [sender.py:send():380] send: telemetry
+2024-01-10 16:38:32,650 DEBUG   SenderThread:1904 [sender.py:send():380] send: config
+2024-01-10 16:38:32,651 DEBUG   SenderThread:1904 [sender.py:send():380] send: telemetry
+2024-01-10 16:38:32,689 DEBUG   SenderThread:1904 [sender.py:send():380] send: telemetry
+2024-01-10 16:38:33,274 INFO    Thread-16 :1904 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\conda-environment.yaml
+2024-01-10 16:38:33,275 INFO    Thread-16 :1904 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\output.log
+2024-01-10 16:38:33,275 INFO    Thread-16 :1904 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\wandb-metadata.json
+2024-01-10 16:38:33,617 INFO    wandb-upload_0:1904 [upload_job.py:push():131] Uploaded file C:\Users\mdini\AppData\Local\Temp\tmpwz98s6prwandb\1202ft9p-wandb-metadata.json
+2024-01-10 16:38:34,906 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:38:35,281 INFO    Thread-16 :1904 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\output.log
+2024-01-10 16:38:39,922 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:38:44,958 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:38:47,466 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-10 16:38:47,466 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: stop_status
+2024-01-10 16:38:47,482 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-10 16:38:50,693 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:38:51,346 INFO    Thread-16 :1904 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\config.yaml
+2024-01-10 16:38:55,928 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:39:00,959 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:39:02,473 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-10 16:39:02,473 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: stop_status
+2024-01-10 16:39:02,489 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-10 16:39:06,742 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:39:11,789 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:39:16,819 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:39:17,479 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-10 16:39:17,479 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: stop_status
+2024-01-10 16:39:17,494 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-10 16:39:20,720 DEBUG   SystemMonitor:1904 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-10 16:39:20,721 DEBUG   SenderThread:1904 [sender.py:send():380] send: stats
+2024-01-10 16:39:22,737 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:39:27,785 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:39:32,494 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-10 16:39:32,494 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: stop_status
+2024-01-10 16:39:32,509 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-10 16:39:33,670 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:39:38,691 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:39:43,740 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:39:47,512 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-10 16:39:47,513 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-10 16:39:47,513 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: stop_status
+2024-01-10 16:39:48,747 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:39:50,734 DEBUG   SenderThread:1904 [sender.py:send():380] send: stats
+2024-01-10 16:39:53,765 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:39:54,747 INFO    Thread-16 :1904 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\output.log
+2024-01-10 16:39:56,734 DEBUG   SenderThread:1904 [sender.py:send():380] send: exit
+2024-01-10 16:39:56,734 INFO    SenderThread:1904 [sender.py:send_exit():585] handling exit code: 1
+2024-01-10 16:39:56,734 INFO    SenderThread:1904 [sender.py:send_exit():587] handling runtime: 96
+2024-01-10 16:39:56,735 INFO    SenderThread:1904 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-01-10 16:39:56,735 INFO    SenderThread:1904 [sender.py:send_exit():593] send defer
+2024-01-10 16:39:56,735 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: defer
+2024-01-10 16:39:56,735 INFO    HandlerThread:1904 [handler.py:handle_request_defer():172] handle defer: 0
+2024-01-10 16:39:56,735 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: defer
+2024-01-10 16:39:56,736 INFO    SenderThread:1904 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-01-10 16:39:56,736 INFO    SenderThread:1904 [sender.py:transition_state():613] send defer: 1
+2024-01-10 16:39:56,736 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: defer
+2024-01-10 16:39:56,736 INFO    HandlerThread:1904 [handler.py:handle_request_defer():172] handle defer: 1
+2024-01-10 16:39:56,736 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: defer
+2024-01-10 16:39:56,736 INFO    SenderThread:1904 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-01-10 16:39:56,736 INFO    SenderThread:1904 [sender.py:transition_state():613] send defer: 2
+2024-01-10 16:39:56,736 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: defer
+2024-01-10 16:39:56,736 INFO    HandlerThread:1904 [handler.py:handle_request_defer():172] handle defer: 2
+2024-01-10 16:39:56,736 INFO    HandlerThread:1904 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-10 16:39:56,736 DEBUG   SystemMonitor:1904 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-10 16:39:56,742 DEBUG   SystemMonitor:1904 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-10 16:39:56,742 INFO    HandlerThread:1904 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-10 16:39:56,742 INFO    HandlerThread:1904 [interfaces.py:finish():202] Joined disk monitor
+2024-01-10 16:39:56,767 INFO    Thread-16 :1904 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\output.log
+2024-01-10 16:39:56,768 INFO    Thread-16 :1904 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\wandb-summary.json
+2024-01-10 16:39:56,772 INFO    HandlerThread:1904 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-10 16:39:56,773 INFO    HandlerThread:1904 [interfaces.py:finish():202] Joined memory monitor
+2024-01-10 16:39:56,773 INFO    HandlerThread:1904 [interfaces.py:finish():202] Joined network monitor
+2024-01-10 16:39:56,773 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: defer
+2024-01-10 16:39:56,773 INFO    SenderThread:1904 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-01-10 16:39:56,773 INFO    SenderThread:1904 [sender.py:transition_state():613] send defer: 3
+2024-01-10 16:39:56,773 DEBUG   SenderThread:1904 [sender.py:send():380] send: stats
+2024-01-10 16:39:56,773 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: defer
+2024-01-10 16:39:56,774 INFO    HandlerThread:1904 [handler.py:handle_request_defer():172] handle defer: 3
+2024-01-10 16:39:56,774 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: defer
+2024-01-10 16:39:56,774 INFO    SenderThread:1904 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-01-10 16:39:56,774 INFO    SenderThread:1904 [sender.py:transition_state():613] send defer: 4
+2024-01-10 16:39:56,774 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: defer
+2024-01-10 16:39:56,774 INFO    HandlerThread:1904 [handler.py:handle_request_defer():172] handle defer: 4
+2024-01-10 16:39:56,774 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: defer
+2024-01-10 16:39:56,774 INFO    SenderThread:1904 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-01-10 16:39:56,774 INFO    SenderThread:1904 [sender.py:transition_state():613] send defer: 5
+2024-01-10 16:39:56,774 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: defer
+2024-01-10 16:39:56,774 INFO    HandlerThread:1904 [handler.py:handle_request_defer():172] handle defer: 5
+2024-01-10 16:39:56,775 DEBUG   SenderThread:1904 [sender.py:send():380] send: summary
+2024-01-10 16:39:56,775 INFO    SenderThread:1904 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-01-10 16:39:56,775 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: defer
+2024-01-10 16:39:56,775 INFO    SenderThread:1904 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-01-10 16:39:56,775 INFO    SenderThread:1904 [sender.py:transition_state():613] send defer: 6
+2024-01-10 16:39:56,775 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: defer
+2024-01-10 16:39:56,776 INFO    HandlerThread:1904 [handler.py:handle_request_defer():172] handle defer: 6
+2024-01-10 16:39:56,776 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: defer
+2024-01-10 16:39:56,776 INFO    SenderThread:1904 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-01-10 16:39:56,776 INFO    SenderThread:1904 [sender.py:transition_state():613] send defer: 7
+2024-01-10 16:39:56,776 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: status_report
+2024-01-10 16:39:56,776 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: defer
+2024-01-10 16:39:56,776 INFO    HandlerThread:1904 [handler.py:handle_request_defer():172] handle defer: 7
+2024-01-10 16:39:56,776 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: defer
+2024-01-10 16:39:56,776 INFO    SenderThread:1904 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-01-10 16:39:57,738 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-10 16:39:57,771 INFO    Thread-16 :1904 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\wandb-summary.json
+2024-01-10 16:39:59,010 INFO    SenderThread:1904 [sender.py:transition_state():613] send defer: 8
+2024-01-10 16:39:59,010 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: poll_exit
+2024-01-10 16:39:59,010 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: defer
+2024-01-10 16:39:59,010 INFO    HandlerThread:1904 [handler.py:handle_request_defer():172] handle defer: 8
+2024-01-10 16:39:59,010 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: defer
+2024-01-10 16:39:59,010 INFO    SenderThread:1904 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-01-10 16:39:59,011 INFO    SenderThread:1904 [job_builder.py:build():298] Attempting to build job artifact
+2024-01-10 16:39:59,011 INFO    SenderThread:1904 [job_builder.py:_get_source_type():428] is repo sourced job
+2024-01-10 16:39:59,303 INFO    SenderThread:1904 [job_builder.py:build():404] adding wandb-job metadata file
+2024-01-10 16:39:59,309 INFO    SenderThread:1904 [sender.py:transition_state():613] send defer: 9
+2024-01-10 16:39:59,309 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: defer
+2024-01-10 16:39:59,309 DEBUG   SenderThread:1904 [sender.py:send():380] send: artifact
+2024-01-10 16:39:59,309 INFO    HandlerThread:1904 [handler.py:handle_request_defer():172] handle defer: 9
+2024-01-10 16:39:59,802 INFO    Thread-16 :1904 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\output.log
+2024-01-10 16:40:00,185 INFO    SenderThread:1904 [sender.py:send_artifact():1458] sent artifact job-https___github.com_Dinica-Mircea_LFW-Segmentation-With-UNet.git_train.py - {'id': 'QXJ0aWZhY3Q6Njg3MTE4ODQ1', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODk4MjU3Mw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg3MTE4ODQ1', 'versionIndex': 0}}}
+2024-01-10 16:40:00,185 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: defer
+2024-01-10 16:40:00,185 INFO    SenderThread:1904 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-01-10 16:40:00,185 INFO    SenderThread:1904 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-01-10 16:40:00,817 INFO    SenderThread:1904 [dir_watcher.py:finish():388] scan: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files
+2024-01-10 16:40:00,817 INFO    SenderThread:1904 [dir_watcher.py:finish():402] scan save: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\conda-environment.yaml conda-environment.yaml
+2024-01-10 16:40:00,817 INFO    SenderThread:1904 [dir_watcher.py:finish():402] scan save: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\config.yaml config.yaml
+2024-01-10 16:40:00,819 INFO    SenderThread:1904 [dir_watcher.py:finish():402] scan save: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\output.log output.log
+2024-01-10 16:40:00,821 INFO    SenderThread:1904 [dir_watcher.py:finish():402] scan save: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\requirements.txt requirements.txt
+2024-01-10 16:40:00,823 INFO    SenderThread:1904 [dir_watcher.py:finish():402] scan save: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\wandb-metadata.json wandb-metadata.json
+2024-01-10 16:40:00,823 INFO    SenderThread:1904 [dir_watcher.py:finish():402] scan save: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\wandb-summary.json wandb-summary.json
+2024-01-10 16:40:00,825 INFO    SenderThread:1904 [sender.py:transition_state():613] send defer: 10
+2024-01-10 16:40:00,825 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: defer
+2024-01-10 16:40:00,825 INFO    HandlerThread:1904 [handler.py:handle_request_defer():172] handle defer: 10
+2024-01-10 16:40:00,827 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: defer
+2024-01-10 16:40:00,827 INFO    SenderThread:1904 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-01-10 16:40:00,827 INFO    SenderThread:1904 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-10 16:40:01,242 INFO    wandb-upload_0:1904 [upload_job.py:push():131] Uploaded file C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\conda-environment.yaml
+2024-01-10 16:40:01,577 INFO    wandb-upload_1:1904 [upload_job.py:push():131] Uploaded file C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\config.yaml
+2024-01-10 16:40:01,595 INFO    wandb-upload_3:1904 [upload_job.py:push():131] Uploaded file C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\requirements.txt
+2024-01-10 16:40:01,952 INFO    wandb-upload_2:1904 [upload_job.py:push():131] Uploaded file C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\output.log
+2024-01-10 16:40:01,961 INFO    wandb-upload_4:1904 [upload_job.py:push():131] Uploaded file C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\files\wandb-summary.json
+2024-01-10 16:40:02,175 INFO    Thread-15 (_thread_body):1904 [sender.py:transition_state():613] send defer: 11
+2024-01-10 16:40:02,175 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: defer
+2024-01-10 16:40:02,175 INFO    HandlerThread:1904 [handler.py:handle_request_defer():172] handle defer: 11
+2024-01-10 16:40:02,175 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: defer
+2024-01-10 16:40:02,175 INFO    SenderThread:1904 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-01-10 16:40:02,175 INFO    SenderThread:1904 [file_pusher.py:join():181] waiting for file pusher
+2024-01-10 16:40:02,176 INFO    SenderThread:1904 [sender.py:transition_state():613] send defer: 12
+2024-01-10 16:40:02,176 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: defer
+2024-01-10 16:40:02,176 INFO    HandlerThread:1904 [handler.py:handle_request_defer():172] handle defer: 12
+2024-01-10 16:40:02,176 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: defer
+2024-01-10 16:40:02,176 INFO    SenderThread:1904 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-01-10 16:40:02,176 INFO    SenderThread:1904 [file_stream.py:finish():595] file stream finish called
+2024-01-10 16:40:02,339 INFO    SenderThread:1904 [file_stream.py:finish():599] file stream finish is done
+2024-01-10 16:40:02,339 INFO    SenderThread:1904 [sender.py:transition_state():613] send defer: 13
+2024-01-10 16:40:02,339 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: defer
+2024-01-10 16:40:02,339 INFO    HandlerThread:1904 [handler.py:handle_request_defer():172] handle defer: 13
+2024-01-10 16:40:02,339 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: defer
+2024-01-10 16:40:02,339 INFO    SenderThread:1904 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-01-10 16:40:02,339 INFO    SenderThread:1904 [sender.py:transition_state():613] send defer: 14
+2024-01-10 16:40:02,340 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: defer
+2024-01-10 16:40:02,340 DEBUG   SenderThread:1904 [sender.py:send():380] send: final
+2024-01-10 16:40:02,340 INFO    HandlerThread:1904 [handler.py:handle_request_defer():172] handle defer: 14
+2024-01-10 16:40:02,340 DEBUG   SenderThread:1904 [sender.py:send():380] send: footer
+2024-01-10 16:40:02,340 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: defer
+2024-01-10 16:40:02,340 INFO    SenderThread:1904 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-01-10 16:40:02,341 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-10 16:40:02,341 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: server_info
+2024-01-10 16:40:02,341 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: get_summary
+2024-01-10 16:40:02,341 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: poll_exit
+2024-01-10 16:40:02,341 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: sampled_history
+2024-01-10 16:40:02,341 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: server_info
+2024-01-10 16:40:02,342 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-10 16:40:02,344 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: job_info
+2024-01-10 16:40:02,494 DEBUG   SenderThread:1904 [sender.py:send_request():407] send_request: job_info
+2024-01-10 16:40:02,494 INFO    MainThread:1904 [wandb_run.py:_footer_history_summary_info():3760] rendering history
+2024-01-10 16:40:02,494 INFO    MainThread:1904 [wandb_run.py:_footer_history_summary_info():3792] rendering summary
+2024-01-10 16:40:02,494 INFO    MainThread:1904 [wandb_run.py:_footer_sync_info():3719] logging synced files
+2024-01-10 16:40:02,494 DEBUG   HandlerThread:1904 [handler.py:handle_request():146] handle_request: shutdown
+2024-01-10 16:40:02,495 INFO    HandlerThread:1904 [handler.py:finish():866] shutting down handler
+2024-01-10 16:40:03,348 INFO    WriterThread:1904 [datastore.py:close():294] close: C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_163819-x0dqju8y\run-x0dqju8y.wandb
+2024-01-10 16:40:03,504 INFO    SenderThread:1904 [sender.py:finish():1536] shutting down sender
+2024-01-10 16:40:03,504 INFO    SenderThread:1904 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-10 16:40:03,504 INFO    SenderThread:1904 [file_pusher.py:join():181] waiting for file pusher

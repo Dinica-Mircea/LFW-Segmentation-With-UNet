@@ -1,6 +1,0 @@
-Traceback (most recent call last):
-  File "C:\Users\Mircea\Desktop\Computer Vision and Deep Learning\L4_Semantic_Segmentation_1\train.py", line 46, in <module>
-    criterion = nn.CrossEntropyLoss() if model.num_classes > 1 else nn.BCEWithLogitsLoss()
-  File "C:\Users\Mircea\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\modules\module.py", line 1695, in __getattr__
-    raise AttributeError(f"'{type(self).__name__}' object has no attribute '{name}'")
-AttributeError: 'UNet' object has no attribute 'num_classes'

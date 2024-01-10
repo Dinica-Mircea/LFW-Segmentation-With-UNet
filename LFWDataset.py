@@ -1,4 +1,6 @@
 import os
+from multiprocessing import Pool
+
 import torch
 import hashlib
 import tarfile
@@ -42,6 +44,11 @@ class LFWDataset(torch.utils.data.Dataset):
                     no_masks = no_masks + 1
         self.X = np.array(images)
         self.Y = np.array(segmentation_masks)
+
+        self.mask_values = [[255, 0, 0], [0, 255, 0], [0, 0, 255]]
+
+        # self.mask_values = list(sorted(np.unique(np.concatenate(unique), axis=0).tolist()))
+        # print(f'Unique mask values: {self.mask_values}')
         print(no_masks.__str__() + " Pictures don't have mask")
         print(self.X.__len__().__str__() + " Good pictures")
         # raise NotImplementedError("Not implemented yet")
@@ -49,11 +56,25 @@ class LFWDataset(torch.utils.data.Dataset):
     def __getitem__(self, idx):
         # TODO your code here: return the idx^th sample in the dataset: image, segmentation mask
         image = cv2.imread(self.X.item(idx))
-        image = image.transpose((2, 0, 1))
         mask = cv2.imread(self.Y.item(idx))
+        width = int(image.shape[1] * 0.8)
+        height = int(image.shape[0] * 0.8)
+        dim = (width, height)
+        dimMask=(192,192)
+        # resize image
+        image = cv2.resize(image, dim, interpolation=cv2.INTER_AREA)
+        mask = cv2.resize(mask, dimMask, interpolation=cv2.INTER_AREA)
+        # put channels first
+        image = image.transpose((2, 0, 1))
+        image = np.divide(image, 255)
+        # process mask
+        maskP = np.zeros(dimMask, dtype=np.int64)
+        for i, v in enumerate(self.mask_values):
+            maskP[(mask == v).all(-1)] = i
+
         return {
             'image': image,
-            'mask': mask
+            'mask': maskP
         }
         # TODO your code here: if necessary apply the transforms
         # raise NotImplementedError("Not implemented yet")
@@ -180,4 +201,4 @@ class LFWDataset(torch.utils.data.Dataset):
 
 if __name__ == '__main__':
     lfw_dataset = LFWDataset(download=False, base_folder='lfw_dataset', transforms=None)
-    print(lfw_dataset.__getitem__(1)[1])
+    print(lfw_dataset.__getitem__(1)['mask'])

@@ -1,6 +1,8 @@
 import torch
 from torch import nn
 import torch.nn.functional as F
+import torch.utils.checkpoint as checkpoint
+from torch.utils.checkpoint import checkpoint_sequential
 
 
 class Encoder(torch.nn.Module):
@@ -10,7 +12,7 @@ class Encoder(torch.nn.Module):
             nn.Conv2d(in_channels=in_channels, out_channels=out_channels, kernel_size=(3, 3)),
             nn.BatchNorm2d(out_channels),
             nn.ReLU(inplace=True),
-            nn.Conv2d(in_channels=out_channels, out_channels=out_channels, kernel_size=(3, 3), padding=1, bias=False),
+            nn.Conv2d(in_channels=out_channels, out_channels=out_channels, kernel_size=(3, 3)), #, padding=1, bias=False),
             nn.BatchNorm2d(out_channels),
             nn.ReLU(inplace=True),
         )
@@ -76,3 +78,18 @@ class UNet(torch.nn.Module):
         logits = self.out_conv(x)
         return logits
 
+    def use_checkpointing(self):
+        self.enc_1 = checkpoint(self.enc_1)
+        self.max_pool_1 = checkpoint(self.max_pool_1)
+        self.enc_2 = checkpoint(self.enc_2)
+        self.max_pool_2 = checkpoint(self.max_pool_2)
+        self.enc_3 = checkpoint(self.enc_3)
+        self.max_pool_3 = checkpoint(self.max_pool_3)
+        self.enc_4 = checkpoint(self.enc_4)
+        self.max_pool_4 = checkpoint(self.max_pool_4)
+        self.enc_5 = checkpoint(self.enc_5)
+        self.dec_1 = checkpoint(self.dec_1)
+        self.dec_2 = checkpoint(self.dec_2)
+        self.dec_3 = checkpoint(self.dec_3)
+        self.dec_4 = checkpoint
+        self.out_conv = nn.Conv2d(in_channels=64, out_channels=3, kernel_size=(1, 1))

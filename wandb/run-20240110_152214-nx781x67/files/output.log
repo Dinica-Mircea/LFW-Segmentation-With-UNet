@@ -1,0 +1,58 @@
+
+Using device:  cuda
+Epoch 1/50:   0%|          | 0/2049 [00:00<?, ?img/s]
+torch.Size([200, 3, 50, 50])
+torch.Size([200, 64, 48, 48])
+torch.Size([200, 64, 24, 24])
+torch.Size([200, 128, 22, 22])
+torch.Size([200, 128, 11, 11])
+torch.Size([200, 256, 9, 9])
+torch.Size([200, 256, 4, 4])
+torch.Size([200, 512, 2, 2])
+Epoch 1/50:   0%|          | 0/2049 [01:27<?, ?img/s]
+Traceback (most recent call last):
+  File "C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\train.py", line 137, in <module>
+    train_model()
+  File "C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\train.py", line 72, in train_model
+    masks_pred = model(images)
+                 ^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\UNet.py", line 82, in forward
+    x5 = self.enc_5(x44)
+         ^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\UNet.py", line 21, in forward
+    return self.encode(x)
+           ^^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\nn\modules\container.py", line 215, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\nn\modules\conv.py", line 460, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\nn\modules\conv.py", line 456, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Calculated padded input size per channel: (1 x 1). Kernel size: (3 x 3). Kernel size can't be greater than actual input size

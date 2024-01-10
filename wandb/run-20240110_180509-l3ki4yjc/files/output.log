@@ -1,0 +1,8 @@
+
+Using device:  cuda
+Epoch 1/2:   0%|          | 9/2049 [01:32<5:50:07, 10.30s/img, loss (batch)=1.7]
+
+
+Epoch 2/2:   0%|          | 9/2049 [01:33<5:54:40, 10.43s/img, loss (batch)=1.55]
+
+

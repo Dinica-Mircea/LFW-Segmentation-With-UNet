@@ -1,0 +1,36 @@
+
+Using device:  cuda
+Epoch 1/50:   0%|          | 0/2049 [01:37<?, ?img/s]
+Traceback (most recent call last):
+  File "C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\train.py", line 137, in <module>
+    train_model()
+  File "C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\train.py", line 66, in train_model
+    for batch in train_loader:
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\utils\data\dataloader.py", line 630, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\utils\data\dataloader.py", line 1345, in _next_data
+    return self._process_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\utils\data\dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\_utils.py", line 694, in reraise
+    raise exception
+cv2.error: Caught error in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\utils\data\_utils\worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 49, in fetch
+    data = self.dataset.__getitems__(possibly_batched_index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\utils\data\dataset.py", line 364, in __getitems__
+    return [self.dataset[self.indices[idx]] for idx in indices]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\anaconda3\Lib\site-packages\torch\utils\data\dataset.py", line 364, in <listcomp>
+    return [self.dataset[self.indices[idx]] for idx in indices]
+            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\LFWDataset.py", line 59, in __getitem__
+    image = cv2.resize(image, dim, interpolation=cv2.INTER_AREA)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+cv2.error: OpenCV(4.9.0) D:\a\opencv-python\opencv-python\opencv\modules\imgproc\src\resize.cpp:4155: error: (-215:Assertion failed) inv_scale_x > 0 in function 'cv::resize'

@@ -1,0 +1,53 @@
+{
+    "os": "Windows-10-10.0.22631-SP0",
+    "python": "3.9.13",
+    "heartbeatAt": "2024-01-10T11:08:58.123795",
+    "startedAt": "2024-01-10T11:08:56.898292",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\mdini\\Desktop\\CVDL\\LFW-Segmentation\\LFW-Segmentation-With-UNet\\train.py",
+    "codePathLocal": "train.py",
+    "codePath": "train.py",
+    "git": {
+        "remote": "https://github.com/Dinica-Mircea/LFW-Segmentation-With-UNet.git",
+        "commit": "36ebb9f225c3150df4b0058dc53e7df309ff29ec"
+    },
+    "email": "dinikmircea@gmail.com",
+    "root": "C:/Users/mdini/Desktop/CVDL/LFW-Segmentation/LFW-Segmentation-With-UNet",
+    "host": "Mircea",
+    "username": "Mircea",
+    "executable": "C:\\Users\\mdini\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "cpu_count": 12,
+    "cpu_count_logical": 24,
+    "cpu_freq": {
+        "current": 3342.0,
+        "min": 0.0,
+        "max": 3701.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3342.0,
+            "min": 0.0,
+            "max": 3701.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 930.7392539978027,
+            "used": 136.37723922729492
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4070",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4070",
+            "memory_total": 12878610432
+        }
+    ],
+    "memory": {
+        "total": 31.920791625976562
+    }
+}

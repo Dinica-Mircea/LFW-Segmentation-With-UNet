@@ -1,0 +1,18 @@
+
+Using device:  cuda
+Epoch 1/50:   0%|          | 0/2049 [00:00<?, ?img/s]
+torch.Size([10, 3, 200, 200])
+torch.Size([10, 64, 196, 196])
+torch.Size([10, 64, 98, 98])
+torch.Size([10, 128, 94, 94])
+torch.Size([10, 128, 47, 47])
+torch.Size([10, 256, 43, 43])
+torch.Size([10, 256, 21, 21])
+torch.Size([10, 512, 17, 17])
+Epoch 1/50:   0%|          | 0/2049 [01:23<?, ?img/s]
+Traceback (most recent call last):
+  File "C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\train.py", line 140, in <module>
+    train_model()
+  File "C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\train.py", line 73, in train_model
+    true_masks.reshape(masks_pred.shape)
+RuntimeError: shape '[10, 3, 192, 192]' is invalid for input of size 400000

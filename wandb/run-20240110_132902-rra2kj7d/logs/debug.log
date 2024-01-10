@@ -1,0 +1,28 @@
+2024-01-10 13:29:02,763 INFO    MainThread:22020 [wandb_setup.py:_flush():76] Current SDK version is 0.16.2
+2024-01-10 13:29:02,763 INFO    MainThread:22020 [wandb_setup.py:_flush():76] Configure stats pid to 22020
+2024-01-10 13:29:02,763 INFO    MainThread:22020 [wandb_setup.py:_flush():76] Loading settings from C:\Users\mdini\.config\wandb\settings
+2024-01-10 13:29:02,764 INFO    MainThread:22020 [wandb_setup.py:_flush():76] Loading settings from C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\settings
+2024-01-10 13:29:02,764 INFO    MainThread:22020 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-01-10 13:29:02,764 INFO    MainThread:22020 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-01-10 13:29:02,764 INFO    MainThread:22020 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'train.py', 'program_abspath': 'C:\\Users\\mdini\\Desktop\\CVDL\\LFW-Segmentation\\LFW-Segmentation-With-UNet\\train.py', 'program': 'C:\\Users\\mdini\\Desktop\\CVDL\\LFW-Segmentation\\LFW-Segmentation-With-UNet\\train.py'}
+2024-01-10 13:29:02,764 INFO    MainThread:22020 [wandb_setup.py:_flush():76] Applying login settings: {'anonymous': 'must'}
+2024-01-10 13:29:02,764 INFO    MainThread:22020 [wandb_init.py:_log_setup():526] Logging user logs to C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_132902-rra2kj7d\logs\debug.log
+2024-01-10 13:29:02,764 INFO    MainThread:22020 [wandb_init.py:_log_setup():527] Logging internal logs to C:\Users\mdini\Desktop\CVDL\LFW-Segmentation\LFW-Segmentation-With-UNet\wandb\run-20240110_132902-rra2kj7d\logs\debug-internal.log
+2024-01-10 13:29:02,764 INFO    MainThread:22020 [wandb_init.py:init():566] calling init triggers
+2024-01-10 13:29:02,764 INFO    MainThread:22020 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-01-10 13:29:02,764 INFO    MainThread:22020 [wandb_init.py:init():616] starting backend
+2024-01-10 13:29:02,764 INFO    MainThread:22020 [wandb_init.py:init():620] setting up manager
+2024-01-10 13:29:02,766 INFO    MainThread:22020 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-01-10 13:29:02,767 INFO    MainThread:22020 [wandb_init.py:init():628] backend started and connected
+2024-01-10 13:29:02,769 INFO    MainThread:22020 [wandb_init.py:init():720] updated telemetry
+2024-01-10 13:29:02,885 INFO    MainThread:22020 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-01-10 13:29:03,578 INFO    MainThread:22020 [wandb_run.py:_on_init():2254] communicating current version
+2024-01-10 13:29:03,747 INFO    MainThread:22020 [wandb_run.py:_on_init():2263] got version response 
+2024-01-10 13:29:03,747 INFO    MainThread:22020 [wandb_init.py:init():804] starting run threads in backend
+2024-01-10 13:29:03,875 INFO    MainThread:22020 [wandb_run.py:_console_start():2233] atexit reg
+2024-01-10 13:29:03,875 INFO    MainThread:22020 [wandb_run.py:_redirect():2088] redirect: wrap_raw
+2024-01-10 13:29:03,876 INFO    MainThread:22020 [wandb_run.py:_redirect():2153] Wrapping output streams.
+2024-01-10 13:29:03,876 INFO    MainThread:22020 [wandb_run.py:_redirect():2178] Redirects installed.
+2024-01-10 13:29:03,876 INFO    MainThread:22020 [wandb_init.py:init():847] run started, returning control to user process
+2024-01-10 13:29:03,876 INFO    MainThread:22020 [wandb_run.py:_config_callback():1342] config_cb None None {'epochs': 50, 'batch_size': 200, 'learning_rate': 0.0001, 'val_percent': 0.3, 'save_checkpoint': True, 'img_scale': 0.5, 'amp': False}
