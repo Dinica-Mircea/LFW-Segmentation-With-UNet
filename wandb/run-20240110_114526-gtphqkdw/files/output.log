@@ -1,0 +1,20 @@
+
+Epoch 1/50:   0%|          | 0/2049 [06:57<?, ?img/s]
+Traceback (most recent call last):
+  File "C:\Users\Mircea\Desktop\Computer Vision and Deep Learning\L4_Semantic_Segmentation_1\train.py", line 136, in <module>
+    train_model()
+  File "C:\Users\Mircea\Desktop\Computer Vision and Deep Learning\L4_Semantic_Segmentation_1\train.py", line 71, in train_model
+    masks_pred = model(images)
+  File "C:\Users\Mircea\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Mircea\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Mircea\Desktop\Computer Vision and Deep Learning\L4_Semantic_Segmentation_1\UNet.py", line 75, in forward
+    x = self.dec_4(x, x1)
+  File "C:\Users\Mircea\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Mircea\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Mircea\Desktop\Computer Vision and Deep Learning\L4_Semantic_Segmentation_1\UNet.py", line 39, in forward
+    x = torch.cat([x2, x1], dim=1)
+RuntimeError: [enforce fail at alloc_cpu.cpp:80] data. DefaultCPUAllocator: not enough memory: you tried to allocate 6298009600 bytes.

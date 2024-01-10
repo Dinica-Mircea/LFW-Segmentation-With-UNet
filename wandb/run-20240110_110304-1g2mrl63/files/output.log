@@ -1,0 +1,8 @@
+
+Epoch 1/50:   0%|          | 0/2049 [02:03<?, ?img/s]
+Traceback (most recent call last):
+  File "C:\Users\Mircea\Desktop\Computer Vision and Deep Learning\L4_Semantic_Segmentation_1\train.py", line 145, in <module>
+    train_model()
+  File "C:\Users\Mircea\Desktop\Computer Vision and Deep Learning\L4_Semantic_Segmentation_1\train.py", line 66, in train_model
+    images, true_masks = batch['image'], batch['mask']
+TypeError: list indices must be integers or slices, not str

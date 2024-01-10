@@ -1,0 +1,34 @@
+
+Epoch 1/50:   0%|          | 0/2049 [01:48<?, ?img/s]
+Traceback (most recent call last):
+  File "C:\Users\Mircea\Desktop\Computer Vision and Deep Learning\L4_Semantic_Segmentation_1\train.py", line 135, in <module>
+    train_model()
+  File "C:\Users\Mircea\Desktop\Computer Vision and Deep Learning\L4_Semantic_Segmentation_1\train.py", line 71, in train_model
+    masks_pred = model(images)
+  File "C:\Users\Mircea\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Mircea\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Mircea\Desktop\Computer Vision and Deep Learning\L4_Semantic_Segmentation_1\UNet.py", line 63, in forward
+    x1 = self.enc_1(x)
+  File "C:\Users\Mircea\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Mircea\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Mircea\Desktop\Computer Vision and Deep Learning\L4_Semantic_Segmentation_1\UNet.py", line 19, in forward
+    return self.encode(x)
+  File "C:\Users\Mircea\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Mircea\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Mircea\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\modules\container.py", line 215, in forward
+    input = module(input)
+  File "C:\Users\Mircea\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\modules\module.py", line 1518, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\Mircea\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\modules\module.py", line 1527, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\Mircea\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\modules\conv.py", line 460, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\Users\Mircea\AppData\Local\Programs\Python\Python39\lib\site-packages\torch\nn\modules\conv.py", line 456, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: [enforce fail at alloc_cpu.cpp:80] data. DefaultCPUAllocator: not enough memory: you tried to allocate 3149004800 bytes.
